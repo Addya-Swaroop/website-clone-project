@@ -1,26 +1,86 @@
-
-.logo{
-    height: 40px;
-    width: 320px;
-    background-image: url(./GENTLE_MONSTER_Logo_New_2.svg);
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://gm-prd-resource.gentlemonster.com/main/banner/774598748925315310/6745aa4a-c010-4f46-957b-4f6b3d6c4b9d/MAIN_PC.jpg);
     background-size: cover;
 }
-.bar{
-    width: 1200px;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
 
-}
-body{
-    font-family: 'Montserrat';
-}
-.bin{
+.navbar {
+    position: absolute;
+    
+    width: 100%;
+    height: 85px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    background: none;
-    padding: 1rem
+    justify-content: space-around;
+    font-size: smaller;
+    
+    overflow: hidden;
 }
+
+/* LEFT SIDE MENU */
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;  */
+    justify-content: space-between;
+}
+.nav-left button {
+    margin-right: 30px;
+    text-decoration: none;
+    border: 0px;
+    background: none;
+    
+   
+    color: black;
+    
+}
+
+/* CENTER LOGO */
+.nav-center {
+    /* height: 9px;
+    width: 20px;
+    
+    background-image: url(./GENTLE_MONSTER_Logo_New_2.svg);
+    background-size: cover;
+    height: 50px;
+    width: 25%;
+    letter-spacing: 2px;
+    font-weight: 600; */
+}
+
+/* RIGHT SIDE TEXT & ICONS */
+.nav-right {
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+}
+
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* BLUR EFFECTS */
+.blur-left,
+.blur-right {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    filter: blur(60px);
+    opacity: 0.35;
+}
+
+/* .blur-left {
+    left: 0;
+    background: radial-gradient(circle, rgba(0,0,0,0.3), transparent);
+}
+
+.blur-right {
+    right: 0;
+    background: radial-gradient(circle, rgba(0,0,0,0.3), transparent);
+} */
