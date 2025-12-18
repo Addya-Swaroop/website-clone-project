@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://gm-prd-resource.gentlemonster.com/main/banner/774598748925315310/6745aa4a-c010-4f46-957b-4f6b3d6c4b9d/MAIN_PC.jpg);
-    background-size: cover;
+    /* background-image: url(https://gm-prd-resource.gentlemonster.com/main/banner/774598748925315310/6745aa4a-c010-4f46-957b-4f6b3d6c4b9d/MAIN_PC.jpg);
+    background-size: cover; */
 }
 
 .navbar {
@@ -23,17 +23,28 @@ body {
 .nav-left{
     display: flex;
     flex-direction: row;
+    
     /* justify-content: center;  */
     justify-content: space-between;
+    
 }
 .nav-left button {
     margin-right: 30px;
     text-decoration: none;
+    font-weight: bold;
     border: 0px;
     background: none;
     
    
     color: black;
+    
+}
+.bgvideo{
+    width: 100%;
+}
+.bgvideo img{
+    /* height: 85%; */
+    /* width: f; */
     
 }
 
@@ -52,10 +63,16 @@ body {
 
 /* RIGHT SIDE TEXT & ICONS */
 .nav-right {
-    display: flex;
-    align-items: center;
     
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     gap: 10px;
+    width: 25%;
+}
+.nav-right a i{
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -75,12 +92,3 @@ body {
     opacity: 0.35;
 }
 
-/* .blur-left {
-    left: 0;
-    background: radial-gradient(circle, rgba(0,0,0,0.3), transparent);
-}
-
-.blur-right {
-    right: 0;
-    background: radial-gradient(circle, rgba(0,0,0,0.3), transparent);
-} */
