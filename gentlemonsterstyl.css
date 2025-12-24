@@ -47,9 +47,9 @@ body {
     width: 100%;
 }
 .bgvideo img{
-    /* height: 85%; */
-    /* width: f; */
-    
+    height: 84.38vh;
+    width: 100%;
+   
 }
 
 /* CENTER LOGO */
@@ -59,7 +59,7 @@ body {
     
     background-image: url(./GENTLE_MONSTER_Logo_New_2.svg);
     background-size: cover;
-    height: 50px;
+    height: 6.82vh;
     width: 25%;
     letter-spacing: 2px;
     font-weight: 600; */
@@ -90,15 +90,15 @@ body {
 .blur-right {
     position: absolute;
     top: 0;
-    width: 350px;
+    width: 46.36vw;
     height: 100%;
     filter: blur(60px);
     opacity: 0.35;
 }
 .classheader{
-    margin: 55px;
+    margin: 3.5294vw;
     font-size:large;
-    height: 50px;
+    height: 6.82vh;
     align-content: center;
     justify-content: space-evenly; 
 }
@@ -122,13 +122,14 @@ body {
 }
 .model img{
     /* height: 610px; */
-    size: 400px;
+    /* size: 400px; */
     
     height: 105vh;
     width: auto;
 }
 .price-tag{
-    margin: 55px;
+    font-family: __gentleSansLightEn_9e3a7a, __gentleSansLightEn_Fallback_9e3a7a, Arial, sans-serif;
+    margin: 3.5294vw;
     position: relative;
     top: -200px;
     background: none;
@@ -145,13 +146,13 @@ body {
 
 } */
  .slide2{
-    margin: 55px;
+    margin: 3.5294vw;
  }
 .specs-slide{
     display: flex;
     position: relative;
     overflow: hidden;
-    margin: -55px;
+    margin: -3.5294vw;
     
     scrollbar-width: none;
     list-style: none;
@@ -164,19 +165,19 @@ body {
 .specs{
     width: 30%;
     height: 80vh;
-    margin: 55px;
+    margin: 3.5294vw;
     width: 370px;
 
 }
 .specs img{
     
     width: 
-    340px;
+    22.2vw;
 
 }
 .gprice-tag{
-    margin: 55px;
-    height: 50px;
+    margin: 3.5294vw;
+    height: 6.82vh;
     justify-content:center;
     align-items: end;
     font-size: small;
@@ -196,7 +197,7 @@ footer{
     text-align:left;
     background: none;
     padding: 20px 0;
-    margin: 55px;
+    margin: 3.5294vw;
     font-size: small;
     width: auto;
     /* position: fixed; */
@@ -216,7 +217,7 @@ footer ul li{
     margin: 0 10px;
 }
 footer div{
-    /* margin-left: 55px; */
+    /* margin-left: 3.5294vw; */
     padding: 0 10px;
     font-weight:bold;
 }
