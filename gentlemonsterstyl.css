@@ -5,6 +5,9 @@ body {
     background-size: cover; */
     background: #F3F4F6;
 }
+.navlefts , .navrights{
+    display: none;
+}
 
 .navbar {
     position: fixed;
@@ -14,14 +17,26 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* transition: overflow 1s ease;; */
     justify-content: space-around;
     font-size: smaller;
     
     overflow: hidden;
 }
-.navbar :hover{
-    color: black;
+.navbar:hover {
+    overflow: visible;
 }
+
+.drop .dd {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+}
+
+
 
 /* LEFT SIDE MENU */
 .nav-left{
@@ -32,10 +47,39 @@ body {
     justify-content: space-between;
     
 }
+.part {
+    position: relative;
+}
+
+.drop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: none;
+    padding: 10px 0;
+    display: none;
+    z-index: 5;
+    min-width: max-content;
+}
+
+.part:hover .drop {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    transform: translateY(-10px);
+    transition: 
+        max-height 4s ease,
+        opacity 3s ease,
+        ease-in-out,    
+        transform 3s ease;
+        
+}
+
+
 .nav-left button {
     margin-right: 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight:520;
     border: 0px;
     background: none;
     
@@ -75,7 +119,7 @@ body {
     width: 25%;
 }
 .nav-right a i{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
@@ -93,7 +137,7 @@ body {
     width: 46.36vw;
     height: 100%;
     filter: blur(60px);
-    opacity: 0.35;
+    opacity: 0.15;
 }
 .classheader{
     margin: 3.5294vw;
@@ -220,4 +264,90 @@ footer div{
     /* margin-left: 3.5294vw; */
     padding: 0 10px;
     font-weight:bold;
+}
+@media(max-width:768px){
+    .navbar{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    /* height: 85px; */
+    height: 8.6vh;
+    display:flex   ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: smaller;
+    
+    overflow: hidden;
+    }
+    .navlefts, .navrights{
+        display: flex;
+    }
+    .navlefts a, .navrights a{
+                color: black;
+    }
+
+    .nav-center{
+        align-items: center;
+    }
+    .nav-left,.nav-right{
+        display: none;
+    }
+    .nav-center svg{
+        /* height: 100%; */
+        width: 70%;
+    }
+    .blur-left,
+.blur-right {
+    position: absolute;
+    top: 0;
+    width: 46.36vw;
+    height: 100%;
+    filter: blur(60px);
+    opacity: 0.35;
+}
+    .bgvideo img {
+        height: 85vh;
+        object-fit: cover;
+        /* transform: scale( */
+    }
+    .model-slide{
+        display: flex;
+        height: 65vh;
+        margin-bottom: 10%;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        height: 60vh;
+        overflow-x: auto;
+    
+    }
+    .model{
+        width: 50vh;
+        overflow: hidden;
+        position: relative;
+        min-height: 85%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    .model img{
+        height: 50vh;
+        object-fit: cover;
+        bottom: -20px;
+        overflow: hidden;
+        transform-origin: top;
+        transform: scale(1.55);
+    }
+    .price-tag{
+        
+        position: relative;
+        top: 20px;
+        bottom: 20px;
+        /* left: 20px; */
+        margin: 0;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
 }
